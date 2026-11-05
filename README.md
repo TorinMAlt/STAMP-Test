@@ -4,6 +4,7 @@
 
 ![CI](https://github.com/KatherLab/STAMP/actions/workflows/ci.yml/badge.svg)
 [![STAMP • Nature Protocols](https://img.shields.io/badge/Nature%20Protocols%20Paper-gray.svg)](https://www.nature.com/articles/s41596-024-01047-2)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FTorinMAlt%2FSTAMP-Test.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FTorinMAlt%2FSTAMP-Test?ref=badge_shield)
 
 *An efficient, ready‑to‑use workflow from whole‑slide image to biomarker prediction.*
 
@@ -278,3 +279,7 @@ uv sync --locked --extra gpu_all
 > [!NOTE]
 > We use a central `Seed` utility to set seeds for PyTorch, NumPy, and Python’s `random`. This makes data loading and model initialization reproducible. Always call `Seed.set(seed)` once at startup.
 > We do not enable [`torch.use_deterministic_algorithms()`](https://pytorch.org/docs/stable/notes/randomness.html#reproducibility) because it can cause large performance drops. Expect runs with the same seed to follow the same training trajectory, but not bit-for-bit identical low-level kernels.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FTorinMAlt%2FSTAMP-Test.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FTorinMAlt%2FSTAMP-Test?ref=badge_large)
